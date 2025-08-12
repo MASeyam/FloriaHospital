@@ -9,12 +9,12 @@ import About from "./components/About";
 
 
 export default function Home() {
-  
+
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <About/>
+      <Navbar />
+      <Hero />
+      <About />
     </>
   );
 }

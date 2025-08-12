@@ -1,45 +1,59 @@
-'use client';
-import styles from '../page.module.css';
+import Link from "next/link";
+import { useState } from "react";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
-export default function Navbar() {
+export default function MyNavbar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <nav className={`navbar fixed-top navbar-expand-lg navbar-dark ${styles.navbarCustom}`}>
-      <div className="container-fluid">
-        <h1 className="navbar-brand">
-          <b className={styles["blue-text"]}>Floria</b> Hospital
-        </h1>
+    <Navbar
+      expand="lg"
+      bg="transparent"
+      variant="light"
+      expanded={expanded}
+      className="p-3 position-absolute w-100"
+      style={{ zIndex: 10 }}
+    >
+      <Container>
+        <Link href="/" className="navbar-brand fw-bold fs-5 text-white">
+          Dental Clinic
+        </Link>
+
+        {/* Custom Animated Toggle Button */}
         <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-controls="basic-navbar-nav"
+          aria-expanded={expanded}
           aria-label="Toggle navigation"
+          className={`custom-toggler d-lg-none ${expanded ? "open" : ""}`}
+          onClick={() => setExpanded(!expanded)}
+          type="button"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Reviews</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contact US</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="justify-content-end flex-lg-row flex-column"
+        >
+          <Nav className="me-3 text-center ">
+            <Link href="/" className="nav-link text-white" onClick={() => setExpanded(false)}>Home</Link>
+            <Link href="/about" className="nav-link text-white" onClick={() => setExpanded(false)}>About</Link>
+            <Link href="/services" className="nav-link text-white" onClick={() => setExpanded(false)}>Services</Link>
+            <Link href="/reviews" className="nav-link text-white" onClick={() => setExpanded(false)}>Reviews</Link>
+            <Link href="/contact" className="nav-link text-white" onClick={() => setExpanded(false)}>Contact Us</Link>
+          </Nav>
+
+          <Button
+            href="tel:+8886959859"
+            className="px-3 mt-3 mt-lg-0 d-none d-lg-block"
+            style={{ backgroundColor: "#2563eb", border: "none", padding: "16px 24px" }}
+          >
+            Call: +(888) 695-9859
+          </Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
