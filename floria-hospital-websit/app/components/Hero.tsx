@@ -10,7 +10,7 @@ export default function Hero() {
         backgroundPosition: "center",
         height: "100vh",
         position: "relative",
-        overflow: "hidden", // hides SVG overflow
+        overflow: "hidden", // important for SVG overflow hiding
       }}
     >
       {/* Overlay */}
@@ -29,12 +29,11 @@ export default function Hero() {
       {/* Content */}
       <Container style={{ zIndex: 2 }}>
         <h1 className="fw-bold display-4">
-          Your Health, Our Top Priority
+          A Better Life Starts with a Beautiful Smile
         </h1>
         <p className="mt-3 fs-5">
-          Providing advanced medical care with compassion, dedication, and expertise for every patient.
+          This is a short description elaborating the service you have mentioned above.
         </p>
-
         <Button variant="primary" size="lg" className="mt-4 px-4 py-2">
           Book An Appointment
         </Button>
@@ -55,7 +54,7 @@ export default function Hero() {
         }}
       >
         <path
-          fill="#fff" // matches next section background
+          fill="#fff" // matches next section background color
           d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
         />
       </svg>

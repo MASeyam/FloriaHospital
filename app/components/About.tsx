@@ -1,37 +1,59 @@
 'use client';
-import styles from '../page.module.css';
+import Image from "next/image";
+import { FaClinicMedical, FaMedkit, FaMapMarkerAlt } from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function About() {
+export default function AboutSection() {
   return (
-    <section id="about" className={styles['about-section']} style={{ marginTop: '0px' }}>
-     <div className={`${styles.container} ${styles['about-container']}`}>
-     <div className={styles['about-text']}>
-  <h2 className={styles["blue-text"]}>Welcome to Floria Hospital</h2>
-  <p>
-    Floria Hospital is dedicated to providing exceptional healthcare services with compassion and expertise.<br />
-    We are proud to be your trusted partner in maintaining your health and well-being.
-  </p>
+    <section id="about" className="container my-5">
+      <div className="row align-items-center">
+        
+        {/* Left Column */}
+        <div className="col-md-6">
+          <h2>Welcome to Floria Hospital</h2>
+          <p>
+            At Floria Hospital, we are committed to providing exceptional medical care 
+            with compassion and professionalism. Our team of highly qualified doctors, 
+            nurses, and healthcare professionals is dedicated to ensuring your health, 
+            safety, and comfort at every step of your journey with us.
+          </p>
 
-  <div className={styles['title-with-icon']}>
-    <img src="/images/hospital (1).png" alt="About Icon" className={styles.icon} />
-    <h3 className={styles["blue-text"]}>Comprehensive Care Close to You</h3>
-  </div>
-  <p>
-    We offer a wide range of medical services tailored to meet the needs of our community,<br /> ensuring reliable and accessible care.
-  </p>
+          <div className="d-flex align-items-start mb-3">
+            <FaClinicMedical className="me-3 text-primary" size={32} />
+            <div>
+              <h5>Comprehensive Medical Services</h5>
+              <p>
+                We offer a full range of healthcare services, from emergency care to 
+                specialized treatments, all under one roof.
+              </p>
+            </div>
+          </div>
 
-  <div className={styles['title-with-icon']}>
-    <img src="/images/hospital (2).png" alt="About Icon" className={styles.icon} />
-    <h3 className={styles["blue-text"]}>Experienced Medical Team</h3>
-  </div>
-  <p>
-    Our team of skilled doctors and healthcare professionals use the latest technology to deliver personalized and effective treatments.
-  </p>
-</div>
+          <div className="d-flex align-items-start mb-3">
+            <FaMedkit className="me-3 text-success" size={32} />
+            <div>
+              <h5>Experienced Medical Staff</h5>
+              <p>
+                Our experienced doctors and nurses are here to provide the highest quality 
+                medical care tailored to your needs.
+              </p>
+            </div>
+          </div>
 
+          <a href="#" className="btn btn-primary">
+            <FaMapMarkerAlt className="me-2" /> View on Google Map
+          </a>
+        </div>
 
-        <div className="about-image">
-          <img src="/images/img1.jpg" alt="Floria Hospital" />
+        {/* Right Column */}
+        <div className="col-md-6 text-center">
+          <Image
+            src="https://websitedemos.net/dental-02/wp-content/uploads/sites/40/2017/07/image04-free-img.jpg"
+            alt="Dentist clinic equipment"
+            width={300}
+            height={300}
+            className="img-fluid rounded"
+          />
         </div>
       </div>
     </section>
