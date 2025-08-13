@@ -7,6 +7,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Services from "./components/serviceOfferd";
+import OurDoctors from "./components/OurDoctors";
+import DentalReviews from "./components/Testimonials";
+
 
 
 export default function Home() {
@@ -17,6 +20,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <OurDoctors/>
+      <DentalReviews/>
       <Footer />
     </>
   );

@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope
 
 export default function Footer() {
     return (
-        <footer className="footer-section">
+        <footer id="contact" className="footer-section">
             <Container>
                 <Row className="py-5">
                     {/* Column 1 - info */}

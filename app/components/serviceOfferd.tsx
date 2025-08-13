@@ -14,7 +14,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="services-section py-5">
+        <section id="services" className="services-section py-5">
             <div className="container">
                 {/* Section Header */}
                 <div className="mb-5 text-center">

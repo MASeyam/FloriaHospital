@@ -40,9 +40,10 @@ export default function MyNavbar() {
           <Nav className="me-3 text-center ">
             <Link href="/" className="nav-link text-white" onClick={() => setExpanded(false)}>Home</Link>
             <Link href="#about" className="nav-link text-white" onClick={() => setExpanded(false)}>About</Link>
-            <Link href="/services" className="nav-link text-white" onClick={() => setExpanded(false)}>Services</Link>
-            <Link href="/reviews" className="nav-link text-white" onClick={() => setExpanded(false)}>Reviews</Link>
-            <Link href="/contact" className="nav-link text-white" onClick={() => setExpanded(false)}>Contact Us</Link>
+            <Link href="#services" className="nav-link text-white" onClick={() => setExpanded(false)}>Services</Link>
+            <Link href="#doctors" className="nav-link text-white" onClick={() => setExpanded(false)}>Doctors</Link>
+            <Link href="#reviews" className="nav-link text-white" onClick={() => setExpanded(false)}>Reviews</Link>
+            <Link href="#contact" className="nav-link text-white" onClick={() => setExpanded(false)}>Contact Us</Link>
           </Nav>
 
           <Button

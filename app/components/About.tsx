@@ -4,7 +4,7 @@ import { FaHome, FaHospital, FaMapMarkerAlt } from "react-icons/fa";
 
 const AboutSection: FC = () => {
   return (
-    <section className="about-section position-relative">
+    <section id="about" className="about-section position-relative">
       <Container>
         <Row className="align-items-center">
           {/* Left Side */}

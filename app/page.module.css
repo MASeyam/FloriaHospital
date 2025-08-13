@@ -93,3 +93,15 @@ html {
 html {
   scroll-behavior: smooth;
 }
+
+.elementor-heading-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.elementor-testimonial-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
