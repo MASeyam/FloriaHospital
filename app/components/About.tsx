@@ -5,19 +5,16 @@ import { FaHome, FaHospital, FaMapMarkerAlt } from "react-icons/fa";
 const AboutSection: FC = () => {
   return (
     <section className="about-section position-relative">
-
-
-
       <Container>
         <Row className="align-items-center">
-
           {/* Left Side */}
           <Col md={5}>
-            <h2 className="fw-bold">Welcome to Dental Clinic</h2>
+            <h2 className="fw-bold">Welcome to Floria Hospital</h2>
             <p>
-              A descriptive paragraph that tells clients how good you are and
-              proves that you are the best choice they’ve made. This paragraph
-              is also for those who are looking out for a reliable dental clinic.
+              At Floria Hospital, we are committed to providing exceptional medical care
+              with modern facilities and a compassionate team of professionals.
+              Whether for routine checkups or specialized treatments, you can count on us
+              for excellence and trust.
             </p>
 
             <div className="service mb-4">
@@ -25,9 +22,9 @@ const AboutSection: FC = () => {
                 <FaHome size={24} color="#2563eb" />
               </div>
               <div>
-                <h5 className="fw-semibold">Friendly Clinic Near You</h5>
+                <h5 className="fw-semibold">Convenient Location Near You</h5>
                 <p className="mb-0">
-                  This is a short description elaborating the service you have mentioned above.
+                  Our hospital is easily accessible and designed to make your visit as smooth as possible.
                 </p>
               </div>
             </div>
@@ -37,35 +34,37 @@ const AboutSection: FC = () => {
                 <FaHospital size={24} color="#2563eb" />
               </div>
               <div>
-                <h5 className="fw-semibold">Experienced Dentist</h5>
+                <h5 className="fw-semibold">Experienced Medical Team</h5>
                 <p className="mb-0">
-                  This is a short description elaborating the service you have mentioned above.
+                  Our doctors and staff have years of experience providing high-quality healthcare.
                 </p>
               </div>
             </div>
 
-            <Button variant="outline-primary" className="d-flex align-items-center justify-content-around location-button">
+            <Button
+              variant="outline-primary"
+              className="d-flex align-items-center justify-content-around location-button"
+            >
               <FaMapMarkerAlt className="location-icon" />
-              View On Google Map</Button>
+              View On Google Map
+            </Button>
           </Col>
 
           {/* Right Side */}
-          <Col md={7} className="text-end mt-4 mt-md-0 ">
+          <Col md={7} className="text-end mt-4 mt-md-0">
             <div className="image-stack">
               <img
-                src="/images/about-section-1.jpg"
-                alt="Happy patient"
+                src="/images/hospital.jpeg"
+                alt="Hospital exterior"
                 className="main-img"
               />
               <img
-                src="/images/img1.jpg"
-                alt="Clinic"
+                src="/images/hospitaldown.jpeg"
+                alt="Hospital interior"
                 className="overlay-img"
               />
-
             </div>
           </Col>
-
         </Row>
       </Container>
     </section>

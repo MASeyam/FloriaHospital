@@ -5,14 +5,14 @@ import { FaFacebook, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope
 
 export default function Footer() {
     return (
-        <footer className="footer-section ">
+        <footer className="footer-section">
             <Container>
                 <Row className="py-5">
                     {/* Column 1 - info */}
                     <Col md={6}>
-                        <h4 className="footer-title">Dental Clinic</h4>
+                        <h4 className="footer-title">Floria Hospital</h4>
                         <p className="footer-text">
-                            Providing professional dental care with modern equipment and experienced doctors.
+                            Providing advanced medical care with modern facilities, skilled doctors, and compassionate service for every patient.
                         </p>
                     </Col>
 
@@ -20,13 +20,13 @@ export default function Footer() {
                     <Col md={4}>
                         <h5 className="footer-subtitle">Contact Us</h5>
                         <p className="footer-text">
-                            <FaMapMarkerAlt className="footer-icon" /> 123 Main Street, Cairo
+                            <FaMapMarkerAlt className="footer-icon" /> 123 Health Avenue, Cairo
                         </p>
                         <p className="footer-text">
                             <FaPhone className="footer-icon" /> +20 123 456 789
                         </p>
                         <p className="footer-text">
-                            <FaEnvelope className="footer-icon" /> info@dentalclinic.com
+                            <FaEnvelope className="footer-icon" /> contact@floriahospital.com
                         </p>
                     </Col>
 
@@ -44,7 +44,7 @@ export default function Footer() {
                 {/* copy rights */}
                 <Row>
                     <Col className="text-center py-3 border-top border-secondary">
-                        <small>© {new Date().getFullYear()} Dental Clinic. All Rights Reserved.</small>
+                        <small>© {new Date().getFullYear()} Floria Hospital. All Rights Reserved.</small>
                     </Col>
                 </Row>
             </Container>
