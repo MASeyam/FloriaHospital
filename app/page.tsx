@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Footer from "./components/Footer";
+import Services from "./components/serviceOfferd";
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Services />
+      <Footer />
     </>
   );
 }

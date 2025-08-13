@@ -1,61 +1,75 @@
-'use client';
-import Image from "next/image";
-import { FaClinicMedical, FaMedkit, FaMapMarkerAlt } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { FC } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaHome, FaHospital, FaMapMarkerAlt } from "react-icons/fa";
 
-export default function AboutSection() {
+const AboutSection: FC = () => {
   return (
-    <section id="about" className="container my-5">
-      <div className="row align-items-center">
-        
-        {/* Left Column */}
-        <div className="col-md-6">
-          <h2>Welcome to Floria Hospital</h2>
-          <p>
-            At Floria Hospital, we are committed to providing exceptional medical care 
-            with compassion and professionalism. Our team of highly qualified doctors, 
-            nurses, and healthcare professionals is dedicated to ensuring your health, 
-            safety, and comfort at every step of your journey with us.
-          </p>
+    <section className="about-section position-relative">
 
-          <div className="d-flex align-items-start mb-3">
-            <FaClinicMedical className="me-3 text-primary" size={32} />
-            <div>
-              <h5>Comprehensive Medical Services</h5>
-              <p>
-                We offer a full range of healthcare services, from emergency care to 
-                specialized treatments, all under one roof.
-              </p>
+
+
+      <Container>
+        <Row className="align-items-center">
+
+          {/* Left Side */}
+          <Col md={5}>
+            <h2 className="fw-bold">Welcome to Dental Clinic</h2>
+            <p>
+              A descriptive paragraph that tells clients how good you are and
+              proves that you are the best choice they’ve made. This paragraph
+              is also for those who are looking out for a reliable dental clinic.
+            </p>
+
+            <div className="service mb-4">
+              <div className="icon-wrapper">
+                <FaHome size={24} color="#2563eb" />
+              </div>
+              <div>
+                <h5 className="fw-semibold">Friendly Clinic Near You</h5>
+                <p className="mb-0">
+                  This is a short description elaborating the service you have mentioned above.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="d-flex align-items-start mb-3">
-            <FaMedkit className="me-3 text-success" size={32} />
-            <div>
-              <h5>Experienced Medical Staff</h5>
-              <p>
-                Our experienced doctors and nurses are here to provide the highest quality 
-                medical care tailored to your needs.
-              </p>
+            <div className="service mb-4">
+              <div className="icon-wrapper">
+                <FaHospital size={24} color="#2563eb" />
+              </div>
+              <div>
+                <h5 className="fw-semibold">Experienced Dentist</h5>
+                <p className="mb-0">
+                  This is a short description elaborating the service you have mentioned above.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <a href="#" className="btn btn-primary">
-            <FaMapMarkerAlt className="me-2" /> View on Google Map
-          </a>
-        </div>
+            <Button variant="outline-primary" className="d-flex align-items-center justify-content-around location-button">
+              <FaMapMarkerAlt className="location-icon" />
+              View On Google Map</Button>
+          </Col>
 
-        {/* Right Column */}
-        <div className="col-md-6 text-center">
-          <Image
-            src="https://websitedemos.net/dental-02/wp-content/uploads/sites/40/2017/07/image04-free-img.jpg"
-            alt="Dentist clinic equipment"
-            width={300}
-            height={300}
-            className="img-fluid rounded"
-          />
-        </div>
-      </div>
+          {/* Right Side */}
+          <Col md={7} className="text-end mt-4 mt-md-0 ">
+            <div className="image-stack">
+              <img
+                src="/images/about-section-1.jpg"
+                alt="Happy patient"
+                className="main-img"
+              />
+              <img
+                src="/images/img1.jpg"
+                alt="Clinic"
+                className="overlay-img"
+              />
+
+            </div>
+          </Col>
+
+        </Row>
+      </Container>
     </section>
   );
-}
+};
+
+export default AboutSection;
