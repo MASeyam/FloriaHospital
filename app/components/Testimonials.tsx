@@ -11,7 +11,7 @@ export default function DentalReviews() {
     {
       name: 'mohamed sabry',
       role: 'Patient',
-      rating: 4,
+      rating: 5,
       text: 'Great experience! The doctors explained everything clearly and the service was fast and efficient.',
     },
     {

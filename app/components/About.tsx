@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaHome, FaHospital, FaMapMarkerAlt } from "react-icons/fa";
 
-const AboutSection: FC = () => {
+export default function AboutSection() {
   return (
     <section id="about" className="about-section position-relative">
       <Container>
@@ -71,4 +71,3 @@ const AboutSection: FC = () => {
   );
 };
 
-export default AboutSection;

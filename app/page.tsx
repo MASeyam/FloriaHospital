@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Services from "./components/serviceOfferd";
 import OurDoctors from "./components/OurDoctors";
 import DentalReviews from "./components/Testimonials";
+import Appointment from "./components/appointment";
 
 
 
@@ -19,9 +20,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Appointment />
       <Services />
-      <OurDoctors/>
-      <DentalReviews/>
+      <OurDoctors />
+      <DentalReviews />
       <Footer />
     </>
   );

@@ -35,7 +35,7 @@ export default function Hero() {
           Providing advanced medical care with compassion, dedication, and expertise for every patient.
         </p>
 
-        <Button variant="primary" size="lg" className="mt-4 px-4 py-2">
+        <Button variant="primary" size="lg" className="mt-4 px-4 py-2" href="#appointment">
           Book An Appointment
         </Button>
       </Container>
