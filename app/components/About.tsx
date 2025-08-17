@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaHome, FaHospital, FaMapMarkerAlt } from "react-icons/fa";
 

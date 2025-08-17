@@ -10,7 +10,7 @@ export default function Hero() {
         backgroundPosition: "center",
         height: "100vh",
         position: "relative",
-        overflow: "hidden", // hides SVG overflow
+        overflow: "hidden",
       }}
     >
       {/* Overlay */}

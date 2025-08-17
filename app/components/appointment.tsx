@@ -1,8 +1,8 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import { FaPhone } from 'react-icons/fa';
 
-function Appointment() {
+export default function Appointment() {
     return (
         <div className="appointment-container container-fluid bg-primary text-white" id="appointment">
             <div className="row align-items-center section-alignment">
@@ -50,4 +50,3 @@ function Appointment() {
     );
 }
 
-export default Appointment;
